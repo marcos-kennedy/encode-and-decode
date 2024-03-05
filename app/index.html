@@ -4,26 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encode and Decode</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/global.css">
 </head>
 <body>
-    <header>
-        <h1>Encode and Decode</h1>
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">Encode and Decode</h1>
     </header>
-    <main>
-        <section>
-            <label for="ienter_text"></label>
-            <textarea name="enter_text" id="ienter_text" cols="30" rows="10" placeholder="Digite seu texto aqui"></textarea>
-            <p><img src="public/assets/exclamation-circle.svg" alt="">Apenas letras minúsculas e sem acento.</p>
-            <button type="button" onclick="encode()">Criptografar</button>
-            <button type="button" onclick="decode()">Descriptografar</button>
+
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <textarea class="apresentacao__conteudo__decrypted-text" name="enter_text" id="ienter_text" placeholder="Digite seu texto aqui"></textarea>
+            <p class="apresentacao__conteudo__decrypted-text__alert"><img src="public/assets/exclamation-circle.svg" alt="">Apenas letras minúsculas e sem acento.</p>
+            <div class="apresentacao__conteudo__decrypted-text__buttons">
+                <button class="apresentacao__conteudo__decrypted-text__buttons__button" type="button" onclick="encode()">Criptografar</button>
+                <button class="apresentacao__conteudo__decrypted-text__buttons__button" type="button" onclick="decode()">Descriptografar</button>
+            </div>
         </section>
-        <section>
-            <img src="public/assets/naruto.png" alt="naruto" width="20%">
+
+        <section class="apresentacao__conteudo__encrypted-text">
+            <img src="public/assets/naruto.png" alt="naruto" width="50%">
             <h2>Nenhuma mensagem encontrada</h2>
             <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
         </section>
     </main>
-    <footer>
+
+    <footer class="rodape">
         <p>Criado por <NAME>Marcos Kennedy - 2024</p>
     </footer>
 </body>
