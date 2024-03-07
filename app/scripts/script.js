@@ -5,7 +5,7 @@ const informationText = document.querySelector('.information-text');
 
 let enterTextOrigin = ''; 
 let textarea = document.getElementById('ienter_text'); 
-let contentText = document.createElement('p');
+let contentText = document.createElement('textarea');
 let buttonCopy = document.createElement('button');
 
 function encode() {
@@ -48,6 +48,8 @@ function encode() {
     imageSecurity.classList.add('hide');
     informationSubTitle.classList.add('hide');
     informationText.classList.add('hide');
+    contentText.classList.add('apresentacao__conteudo__decrypted-text');
+    contentText.style.textAlign = 'center';
     contentText.textContent = textEncrypted;
 
     if (buttonCopy.classList.contains('hide')) {
@@ -79,5 +81,5 @@ function decode(){
 }
 
 function contemApenasMinusculasSemAcento(str) {
-    return /^[a-z]*$/.test(str.normalize("NFD").replace(/[\u0300-\u036f]/g, ""));
+    return /^[a-z\s]*$/.test(str.normalize("NFD").replace(/[\u0300-\u036f]/g, ""));
 }
