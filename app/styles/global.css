@@ -48,6 +48,7 @@ body {
     outline: none;
     background-color: transparent;
     color: var(--color-primary);
+    width: 70%;
 }
 
 ::placeholder {
