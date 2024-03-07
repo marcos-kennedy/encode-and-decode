@@ -12,6 +12,7 @@
 body {
     box-sizing: border-box;
     font-family: var(--font-primary);
+    font-size: 1.25rem;
     background-color: var(--color-secondary);
     color: var(--color-primary);
 }
@@ -40,7 +41,6 @@ body {
     width: 70%;
     gap: 20px;
     font-weight: 400;
-    font-size: 1rem;
 }
 
 .apresentacao__conteudo__decrypted-text {
@@ -86,13 +86,38 @@ body {
     gap: 16px;
     width: 30%;
     height: 30rem;
+    padding: 0 2%;
     border: 1px solid var(--color-contrast-one);
     border-radius: 32px;
     background-color: var(--color-secondary);
     color: var(--color-contrast-two);
 }
 
+.button-copy {
+    width: 100%;
+    padding: 24px;
+    border-radius: 24px;
+    background-color: var(--color-tertiary);
+    color: var(--color-contrast-one);
+    cursor: pointer;
+    opacity: .7;
+}
+
+.button-copy:hover {
+    background-color: var(--color-contrast-one);
+    color: var(--color-tertiary);
+    opacity: 1;
+}
+
+.image-security {
+    width: 50%;
+}
+
 .rodape {
     text-align: center;
     padding: 2% 10% ;
+}
+
+.hide {
+    display: none;
 }
